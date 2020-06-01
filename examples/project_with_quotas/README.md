@@ -2,7 +2,7 @@
 
 This environment will create a Selectel VPC project with an user and quotas.
 
-The environment includes one example (you can see other examples in the module."project" and use here):
+The environment includes one example (you can see other examples in the module "project" and use here):
 
 1. Defined project name and user name, random user password, defined quotas.
 
