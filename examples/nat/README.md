@@ -1,6 +1,6 @@
 # The NAT
 
-This environment will create a Selectel VPC project with an user and the NAT
+This environment will create a Selectel VPC project with an user and the NAT.
 
 ## Example usage
 
