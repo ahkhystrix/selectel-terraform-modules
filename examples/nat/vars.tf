@@ -1,6 +1,12 @@
-variable "sel_token" {}
+variable "sel_token" {
+  description = "Export Selectel API token as variable TF_VAR_sel_token"
+  type        = string
+}
 
-variable "sel_account" {}
+variable "sel_account" {
+  description = "Export Selectel account name as variable TF_VAR_sel_account"
+  type        = string
+}
 
 variable "auth_url" {
   description = "Selectel Openstack API URL"
