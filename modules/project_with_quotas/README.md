@@ -4,15 +4,19 @@ Terraform module for creating a Selectel project with user and quotas.
 
 ## Variables
 
-  * `project_name` - Name of the project.
+  * `project_name` - Name of the project (optional, default random)
 
-  * `user_name` - Name of the user.
+  * `user_name` - Name of the user (optional, default random)
 
-  * `user_password` - Password of the user.
+  * `user_password` - Password of the user (optional, default random)
+
+You can omit the project name, username or password. A random name for the project and user will be created (they will match) and a random password.
 
   * `region` - Region (default "ru-3")
 
   * `zone` - Zone (default "ru-3a")
+
+You can set quotas for only one region and zone.
 
   * `quota_compute_cores` - Quota compute cores (optional, default 20)
   
@@ -56,20 +60,16 @@ Terraform module for creating a Selectel project with user and quotas.
 
   *  `quota_network_subnets_29_vrrp` - Quota network subnets /29 VRRP (optional, default 0, doesn't work now, use web panel to change)
 
-You can omit the project name, username and password. 
-A random name for the project and user will be created (they will match) 
-and a random password.
-
 ## Outputs
 
-  * `project_id` - ID of the created project.
+  * `project_id` - ID of the created project
 
-  * `project_name` - Name of the created project.
+  * `project_name` - Name of the created project
 
-  * `user_id` - ID of the created user.
+  * `user_id` - ID of the created user
 
-  * `user_name` - Name of the created user.
+  * `user_name` - Name of the created user
 
-  * `user_password` - Password of the created user.
+  * `user_password` - Password of the created user
 
-  * `role_id` - ID of the created role.
+  * `role_id` - ID of the created role
